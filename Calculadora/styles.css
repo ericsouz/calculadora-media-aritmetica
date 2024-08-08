@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e1e5ea); /* Gradiente suave e moderno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03); /* Efeito de zoom suave */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Intensificação da sombra */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    border-color: #4a90e2; /* Azul claro para foco */
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4a90e2; /* Azul claro */
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #357abd; /* Azul escuro no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.result {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f7f9fc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
